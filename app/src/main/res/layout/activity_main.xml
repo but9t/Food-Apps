@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/secondary">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SiMbok Mobile"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/interbold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp" />
+    <ImageView
+        android:id="@+id/simbok"
+        android:layout_below="@+id/heading"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/login"
+        android:layout_below="@id/simbok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/interbold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login"
+        android:background="@drawable/rounded10_shape"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/black"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="masukkan username"
+        android:fontFamily="@font/interregular"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user"
+        android:background="@drawable/rounded10_shape"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="masukkan password"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:fontFamily="@font/interregular"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_below="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:width="150dp"
+        android:text="Login"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_shape"/>
+
+    <LinearLayout
+        android:layout_below="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?"
+            android:fontFamily="@font/intersemibold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/interbold"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
